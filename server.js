@@ -13,7 +13,9 @@ const openai = new OpenAIApi(configuration);
 // Set up the server
 const app = express();
 app.use(bodyParser.json());
-app.use(cors());
+app.use(cors({
+  origin: 'https://cjtakhar.github.io'
+}));
 
 // Set up the ChatGPT endpoint
 app.post("/chat", async (req, res) => {
