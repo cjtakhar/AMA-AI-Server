@@ -14,7 +14,7 @@ const openai = new OpenAIApi(configuration);
 const app = express();
 app.use(bodyParser.json());
 app.use(cors({
-  origin: 'https://cjtakhar.github.io/',
+  origin: 'https://cjtakhar.github.io',
   allowedHeaders: ['Content-Type', 'Authorization', 'Access-Control-Allow-Origin'],
   methods: ['GET', 'POST', 'OPTIONS'],
   credentials: true,
