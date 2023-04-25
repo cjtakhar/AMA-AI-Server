@@ -37,7 +37,7 @@ app.post("/chat", async (req, res) => {
     .map((choice) => choice.text)
     .join("");
 
-  res.header('Access-Control-Allow-Origin', 'https://cjtakhar.github.io/AMA-AI');
+  res.header('Access-Control-Allow-Origin', 'https://cjtakhar.github.io');
   res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,OPTIONS');
   res.send(fullResponse);
 });
